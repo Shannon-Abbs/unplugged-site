@@ -95,6 +95,7 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
  font-size: 1em;
+ color: #e2e3ed;
 }
  
 ul, 
@@ -132,6 +133,12 @@ p {
 	font-size: .875em;
   line-height: 18px;
 }
+
+input {
+  font-size: 1.125em;
+  font-weight: 500;
+  color:#2a423a;
+}
  
 img {
  
@@ -158,6 +165,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color:#202322;
 }
 
 header {
@@ -176,7 +184,7 @@ header .content-wrapper {
   height: 1px;
   width: 100%;
   margin: 10px 0 20px 0;
-
+  background-color:#3a3a3a;
 }
 
 header nav {
@@ -185,6 +193,8 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-size: 1.125em;
+  font-weight: bold;
 }
 
 header nav ul {
@@ -199,6 +209,7 @@ footer {
 
 footer p {
   margin: 0;
+
 }
 
 footer .content-wrapper {
@@ -214,6 +225,7 @@ footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  size: 21px;
 }
 
 footer .social-icons p {
@@ -226,6 +238,34 @@ footer .copyright {
   margin: 20px 0;
 }
 
+/*Base Styles*/
+	
+aside .form {
+  margin-top: 30px;
+  background-color:#527158;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 
    
@@ -237,6 +277,7 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+
 }
 
 /* Aside */
@@ -247,6 +288,7 @@ aside {
   align-items: center;
   flex-flow: row wrap;
   padding: 50px;
+  background-color: #527158;
 }
 
 /* Features */
@@ -279,16 +321,20 @@ aside {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: #2a423a;
 }
 
 .reviews h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 
 .reviews h3 {
   width: 55%;
   margin: 20px 0;
 }
+
+
 
 /* Footer */
 
@@ -310,6 +356,7 @@ footer p {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
   }
   
   .contact-section {
@@ -317,6 +364,7 @@ footer p {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #2a423a;
   }
   
   /* ==========================================================================
@@ -328,6 +376,7 @@ footer p {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
   }
   
   .faq .content-wrapper {
@@ -335,6 +384,14 @@ footer p {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+  }
+
+  .faq h2{
+    line-height: 30px;
+  }
+
+  .faq-content h4 {
+    line-height: 24px;
   }
 
 
@@ -438,6 +495,23 @@ footer p {
       max-width: 640px;
       margin: 100px 0;
     }
+
+    h1 {
+      font-size: 3em;
+      line-height: 48px;
+    }
+
+    h2 {
+      font-size: 2em;
+      line-height: 48px;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      line-height: 30px;
+    }
+
+
   
     /* Header */
     header {
@@ -512,6 +586,14 @@ footer p {
       justify-content: space-between;
       align-items: center;
     }
+
+    .footer .contact h4 {
+      font-size: 1.5em;
+    }
+
+    footer p {
+      line-height: 18px;
+    }
   
     footer .contact {
       margin-bottom: 0;
@@ -562,11 +644,41 @@ footer p {
     .faq h2 {
       width: 100%;
     }
+
+    .faq h4 p {
+      font-size: .875em;
+      line-height: 15.75px;
+    }
   }
 
 
   @media only screen and (min-width:1200px) {
     /*Desktop styles here*/
+
+    /*Base Styles*/
+
+    h1 {
+      font-size: 3.75em;
+    }
+
+    h2 {
+      font-size: 2em;
+    }
+
+    h3 h4 {
+      font-size: 1.875em;
+    }
+
+    p {
+      font-size: 1.125em;
+      line-height: 24px;
+    }
+
+    .faq h4 p {
+font-size: 1.125px;
+line-height: 18px;
+    }
+
   
     .content-wrapper {
       max-width: 960px;
@@ -620,7 +732,7 @@ footer p {
   
   }
 
-}
+
 
 /* ==========================================================================
    Print styles.
