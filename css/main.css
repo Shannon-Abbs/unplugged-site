@@ -264,6 +264,14 @@ input[type=button] {
   text-transform: uppercase;
 }
 
+img { 
+	width: 100%;
+}
+ 
+figure {
+    margin: 0;
+}
+
 
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -274,7 +282,11 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #333;
 }
 
 /* Aside */
@@ -537,12 +549,7 @@ footer p {
 
   /* Hero Area */
 
-  .hero-area {
-    background-image: url ('../img/unplugged-retreat.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+ 
 
   /* Aside */
   aside .content-wrapper {
