@@ -140,9 +140,14 @@ input {
   color: #2a423a;
 }
 
-img {}
+img {
+	width: 100%;
+}
+ 
+figure {
+    margin: 0;
+}
 
-figure {}
 
 address {
   font-style: normal;
@@ -275,6 +280,16 @@ figure {
 
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
+
+/*Header */
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 
 /* Hero Area */
 
@@ -537,6 +552,14 @@ footer p {
     justify-content: space-between;
   }
 
+header figure {
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
   header nav {
     width: 20%;
   }
@@ -700,6 +723,14 @@ footer p {
   .content-wrapper {
     max-width: 960px;
   }
+
+  header figure {
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
   /* Hero */
   .hero-area h1 {
