@@ -182,6 +182,14 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .header-divider {
   height: 1px;
   width: 100%;
@@ -269,14 +277,6 @@ input[type=button] {
   text-transform: uppercase;
 }
 
-img {
-  width: 100%;
-}
-
-figure {
-  margin: 0;
-}
-
 
 
 /* -------------------- Mobile Styles - Homepage -------------------- */
@@ -298,6 +298,7 @@ header figure {
   justify-content: center;
   flex-flow: row wrap;
   background: url(../img/unplugged-retreat.jpg);
+  min-height: 500px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -387,12 +388,28 @@ footer p {
   background-color: #527158;
 }
 
+.map-container {
+  position: relative;
+  padding-bottom:75%;
+  height: 0;
+  overflow:hidden;
+}
+
+.map-container iframe {
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
 .contact-section {
   display: flex;
   justify-content: center;
+  text-align: left;
   align-items: center;
   flex-flow: row wrap;
-  background-color: #2a423a;
+  background-color: #527158;
 }
 
 /* ==========================================================================
@@ -552,13 +569,10 @@ footer p {
     justify-content: space-between;
   }
 
-header figure {
-    width: 25%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: row wrap;
-}
+
+  header figure {
+    width: 30%;
+  }
 
   header nav {
     width: 20%;
@@ -566,13 +580,11 @@ header figure {
 
   header nav ul {
     justify-content: space-between;
-
   }
 
   .header-divider {
     display: none;
   }
-
 
   /* Hero Area */
 
@@ -648,6 +660,7 @@ header figure {
      About Page
      ========================================================================== */
 
+  
   .mission-content {
     display: flex;
     justify-content: space-between;
