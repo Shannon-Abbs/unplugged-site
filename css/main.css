@@ -191,20 +191,21 @@ header figure {
 }
 
 .header-divider {
+  background: #3a3a3a; 
   height: 1px;
   width: 100%;
   margin: 10px 0 20px 0;
-  background-color: #3a3a3a;
 }
 
 header nav {
+  width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
-  width: 60%;
-  font-size: 1.125em;
-  font-weight: bold;
 }
 
 header nav ul {
@@ -212,14 +213,13 @@ header nav ul {
   justify-content: space-around;
   width: 100%;
 }
-
 footer {
+  text-align: center;
   flex-direction: column;
 }
 
 footer p {
   margin: 0;
-
 }
 
 footer .content-wrapper {
@@ -229,40 +229,32 @@ footer .content-wrapper {
 
 footer .contact {
   margin-bottom: 50px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-footer h4 {
-  text-align: center;
 }
 
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-footer .social-icons i {
-  display:flex;
-  justify-content: space-around;
-  align-items:flex-start;
-  color: #527158;
-  margin: 12px;
-  font-size: 1.31em;
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
   margin: 20px 0;
 }
+
 
 /*Base Styles*/
 
