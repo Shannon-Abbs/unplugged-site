@@ -441,19 +441,43 @@ footer p {
 }
 
 .faq .content-wrapper {
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin-bottom: 0;
+}
+
+.faq-page{
+  background: #527158; 
+  padding: 50px 0 0 0;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  flex-flow: row wrap;
+ 
 }
 
 .faq h2 {
   line-height: 30px;
+  padding: 40px;
 }
+
+.faq p {
+  padding:50px;
+  margin: 50px;
+}
+
 
 .faq-content h4 {
   line-height: 24px;
 }
+
+
+
+
 
 
 
