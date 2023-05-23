@@ -620,6 +620,12 @@ footer p {
     display: none;
   }
 
+
+  
+  /* ==========================================================================
+     Home Page
+     ========================================================================== */
+
   /* Hero Area */
 
   .hero-area {
@@ -722,11 +728,13 @@ footer p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding-top: 20px
   }
 
   .mission-content p {
     width: 45%;
+    
   }
 
   .map-container {
@@ -748,23 +756,33 @@ footer p {
     width: 80%;
   }
 
-  .contact-content {
+  .contact-content { 
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
   }
+
+  .contact-content address {
+    width: 50%;
+  }
+
 
   /* ==========================================================================
      FAQ Page
      ========================================================================== */
 
   .faq .content-wrapper {
+    display:flex;
     justify-content: space-between;
+    
   }
 
   .faq-content {
     flex-basis: 45%;
   }
+
+  .faq 
 
   .faq h2 {
     width: 100%;
@@ -773,6 +791,9 @@ footer p {
   .faq h4 p {
     font-size: .875em;
     line-height: 15.75px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
